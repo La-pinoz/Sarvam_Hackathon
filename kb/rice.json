@@ -1,0 +1,236 @@
+{
+  "rice_blast": {
+    "id": "rice_blast",
+    "crop": "Rice",
+    "disease_name": "Blast",
+    "causal_organism": "Magnaporthe oryzae (Syn: Pyricularia grisea, Magnaporthe grisea)",
+    "pathogen_type": "Fungal disease",
+    "symptoms_bullets": [
+      "The fungus attacks the crop at all stages of crop growth from seedling to late tillering and ear heading stage.",
+      "Symptoms appear on leaves, nodes, rachis, and glumes.",
+      "On the leaves, the lesions appear as small bluish green flecks. The lesions soon enlarge under moist weather to form the characteristic spindle shaped spots with grey centre and dark brown margin (Leaf blast).",
+      "The spots coalesce as the disease progresses and large areas of the leaves dry up and wither. Spots also appear on sheath. Severely infected nursery and field appear as burnt.",
+      "Black lesions appear on nodes girdling them. The affected nodes may break up and all the plant parts above the infected nodes may die (nodal blast).",
+      "Nodal infection causes the culm to break at the infected area.",
+      "Inter-nodal infection also occurs at the base of the plant which causes white panicles similar to that induced by yellow stem borer or water deficit.",
+      "Lesions on the neck are grayish brown and cause the girdling of the neck and the panicle to fall over.",
+      "If infection of the neck occurs before milky stage, no grain is formed, but if infection occurs later, grains of poor quality are formed.",
+      "Lesions on the branches of the panicles and on the spikelet pedicels are brown to dark brown.",
+      "The size and shape of the spots vary on different rice varieties."
+    ],
+    "pathogen_description": "The mycelium is hyaline to olivaceous and septate. Conidia are produced in clusters on long septate, olivaceous conidiophores. Conidia are pyriform to ellipsoid, attached at the broader base by a hilum. Conidia are hyaline to pale olive green, usually 3 celled. The perfect state of the fungus is M. grisea producing perithecia. The ascospores are hyaline, fusiform, 4 celled and slightly curved.",
+    "survival_and_spread": "The fungus survives on collateral hosts viz., Panicum repens, Digitaria marginata, Brachiaria mutica, Leersia hexandra and Echinochloa crusgalli. Mycelium and conidia in the collateral hosts, straw and seeds are major sources of primary inoculum. The secondary spread takes place through airborne conidia since spores of the fungus are present throughout the year. Irrigation water may carry the conidia to different fields.",
+    "favourable_conditions": "Intermittent drizzles. Cloudy weather. High relative humidity (93-99 per cent). Low night temperature (between 15-20 °C or less than 26 °C). Availability of collateral hosts. Application of excess nitrogen.",
+    "management": "Grow resistant and moderately resistant varieties like CO47, CO 51, CO 52, CO 53, CO55, CO56, ASD 18 and IR64. Remove and destroy the weed hosts in the field bunds and channels. Treat the seeds with Captan or Thiram or Carbendazim or Tricyclazole at 2 g/kg or Bacillus subtilis @ 10g/kg of seed. Spray the nursery with Carbendazim 50 WP @ 25 g or Edifenphos 50 EC @ 25 ml for 20 cent nursery. Foliar spray the main field with Edifenphos 200 ml or Carbendazim 100 g or Tricyclazole 75 WP @ 200 g or Iprobenphos (IBP) 200 ml/acre or Azoxystrobin + Difenoconazole 100 ml/acre when initial symptoms are noticed."
+  },
+  "rice_brown_spot_sesame_leaf_spot": {
+    "id": "rice_brown_spot_sesame_leaf_spot",
+    "crop": "Rice",
+    "disease_name": "Brown Spot (Sesame Leaf Spot)",
+    "causal_organism": "Helminthosporium oryzae (Sexual stage: Cochliobolus miyabeanus)",
+    "pathogen_type": "Fungal disease",
+    "symptoms_bullets": [
+      "The fungus attacks the crop from seedling to milky stage in the main field.",
+      "Symptoms appear as minute spots on the coleoptile, leaf blade, leaf sheath, and glume, being most prominent on the leaf blade and glumes.",
+      "The spots become cylindrical or oval, dark brown with yellow halo.",
+      "The several spots coalesce and the leaf dries up.",
+      "The seedlings die and affected nurseries can often be recognised from a distance by scorched appearance.",
+      "Dark brown or black spots also appear on glumes leading to grain discoloration.",
+      "It causes failure of seed germination, seedling mortality and reduces the grain quality and weight."
+    ],
+    "pathogen_description": "H. oryzae produces brown septate mycelium. Conidiophores may arise singly or in small groups. They are geniculate, brown in colour. Conidia are usually curved with a bulged center and tapered ends. They are pale to golden brown in colour and are 6-14 septate. The perfect stage of the fungus is C. miyabeanus. It produces perithecia with asci containing 6-15 septate, filamentous or long cylindrical, hyaline to pale olive green ascospores. These break down the protein fragment of the cell wall resulting in partial disruption of the integrity of the cell.",
+    "survival_and_spread": "Infected seeds and stubbles are the most common source of primary infection. The conidia present on infected grain and mycelium in the infected tissue are viable for 2 to 3 years. Airborne conidia infect the plants both in nursery and in main field. Maximum flight of conidia takes place at a wind velocity of 4.0-8.8 hr. Minimum temperature of 27-28 °C, relative humidity of 90-99% and rainfall of 0.4-14.4 mm favoured the dispersal of the conidia to the maximum extent. The fungus also survives on collateral hosts like Leersia hexandra and Echinochloa colonum.",
+    "favourable_conditions": "Temperature of 25-30 °C with relative humidity above 80 per cent is highly favourable. Excess nitrogen aggravates the disease severity.",
+    "management": "Field sanitation — removal of collateral hosts and infected debris from the field. Use of slow release nitrogenous fertilizers is advisable. Grow resistant and moderately resistant varieties like CO 51, CO 52, CO 53, CO 55, CO 56, ASD 18 and IR 64. Use disease-free seeds. Treat the seeds with Thiram or Captan at 4 g/kg. Spray the nursery with Edifenphos 40 ml or Mancozeb 80 g for 20 cent nursery. Spray the crop in the main field with Edifenphos 200 ml or Mancozeb 500 g when the grade reaches 3. Repeat after 15 days if needed."
+  },
+  "rice_bacterial_leaf_blight": {
+    "id": "rice_bacterial_leaf_blight",
+    "crop": "Rice",
+    "disease_name": "Bacterial Leaf Blight",
+    "causal_organism": "Xanthomonas oryzae pv. oryzae",
+    "pathogen_type": "Bacterial disease",
+    "symptoms_bullets": [
+      "Bacterial blight syndrome exhibits three types of symptoms: leaf blight, kresek (the seedling blight or wilt phase) and the pale-yellow leaf.",
+      "The disease has been referred to as \"bacterial leaf blight\" to indicate that the \"leaf blight\" phase of the syndrome is the most distinct and commonly observed symptom.",
+      "Seedlings in the nursery show circular, yellow spots on the margin, that enlarge and coalesce, leading to drying of foliage.",
+      "\"Kresek\" symptom is seen in seedlings, 1-2 weeks after transplanting.",
+      "The bacteria enter through cut wounds in the leaf tips, become systemic and cause death of the entire seedling.",
+      "In grown-up plants, water-soaked, translucent lesions appear near the leaf margin.",
+      "The lesions enlarge both in length and width with a wavy margin and turn straw yellow within a few days, covering the entire leaf.",
+      "As the disease advances, the lesions cover the entire lamina which turns white or straw coloured.",
+      "Milky or opaque dew drops containing bacterial masses are formed on young lesions in the early morning.",
+      "They dry up on the surface leaving a white encrustation.",
+      "The affected grains have discoloured spots.",
+      "If the cut end of the leaf is dipped in water, it becomes turbid because of bacterial ooze."
+    ],
+    "pathogen_description": "The bacterium is aerobic, gram negative, non spore forming, rod-shaped with size ranging from 1-2 x 0.8-1.0 μm with a monotrichous polar flagellum. Bacterial colonies are circular, convex with entire margins, whitish yellow to straw yellow coloured and opaque.",
+    "survival_and_spread": "The pathogen survives in soil and in infected stubbles and on collateral hosts Leersia spp., Plantago major, Paspalum dictum, and Cynodon dactylon. The pathogen spreads through irrigation water and also through rain storms.",
+    "favourable_conditions": "Clipping of the tip of the seedling at the time of transplanting. Heavy rain, heavy dew, flooding, deep irrigation water. Severe wind and temperature of 25-30 °C. Application of excessive nitrogen, especially late top dressing.",
+    "management": "[Cultural Methods] Burn the stubbles. Use optimum dose of fertilizers. Avoid clipping of the tip of the seedling at the time of transplanting. Avoid flooded conditions. Remove weed hosts periodically. [Chemical Methods] Seed treatment: Soaking of seeds in streptomycin sulphate 90% and tetracycline 10% SP @ 40 ppm for 12 hours, or seedling root dipping @ 40 ppm for 30 minutes. Foliar spray in the main field @ 100-150 ppm. Repeat the spray after 15 days, if required."
+  },
+  "rice_rice_tungro_disease": {
+    "id": "rice_rice_tungro_disease",
+    "crop": "Rice",
+    "disease_name": "Rice Tungro Disease",
+    "causal_organism": "Rice tungro bacilliform virus (RTBV) and Rice tungro spherical virus (RTSV)",
+    "pathogen_type": "Viral disease",
+    "symptoms_bullets": [
+      "Plants affected by tungro exhibit stunting and reduced tillering. Leaves become yellow or orange-yellow and may also have rust-coloured spots.",
+      "Yellowing starts from the tip of the leaf and may extend to the lower part of the leaf blade. The third leaf from the top of the most infected plants is taller than other leaves.",
+      "Young leaves are often mottled with pale green to whitish interveinal stripes and old leaves may have rusty streaks of various sizes.",
+      "Delayed flowering — panicles are small and not completely exerted.",
+      "Most panicles are sterile or have partially filled grains.",
+      "The plants may be killed if infected early.",
+      "Tungro virus disease affects all growth stages of the rice plant, specifically high at the vegetative stage."
+    ],
+    "pathogen_description": "Tungro virus disease is transmitted by leafhoppers, wherein the most efficient vector is the green leafhopper, Nephotettix virescens (Distant). The disease complex is associated with rice tungro bacilliform virus (RTBV) and rice tungro spherical virus (RTSV). RTBV cannot be transmitted by leafhoppers unless RTSV is present. Insects can acquire the virus from any part of the infected plant. After acquiring the virus, the vector can immediately transmit it to other plants. RTBV particles are rod-shaped, 100-300 nm in length and 30-35 nm in width, and contain DNA of 8.3 kb. RTSV particles are isometric, 30 nm in diameter, and have a polyadenylated single-stranded RNA of about 12 kb.",
+    "survival_and_spread": "",
+    "favourable_conditions": "Presence of the virus sources. Presence of the vector. Age and susceptibility of host plants. Synchronization of the three above factors. All growth stages of the rice plant, specifically the vegetative stage.",
+    "management": "[Trap Methods] Light traps are to be set up to attract and control the leafhopper vectors as well as to monitor the population. Install light traps @ one/ha. Install yellow sticky traps @ 12/ha. In the early morning, the population of leafhoppers alighting near the light trap should be killed by spraying/dusting insecticides. This should be practiced every day. [Cultural Methods] Planting resistant varieties against tungro virus disease is the most economical means of managing the disease. Grow disease-tolerant cultivars like MTU 9992, 1002, 1003, 1005, Suraksha, Vikramarya, Bharani, IR 36, IET 2508, RP 4-14, IET 1444, IR50 and Co45. Adjusting the date of planting is recommended among cultural management practices. Observe a fallow period of at least a month to eliminate hosts, viruses and vectors of the disease. In epidemic areas, follow rotation with pulses or oil seeds. Apply neem cake @ 12.5 kg/20 cent nursery as a basal dose. Summer deep ploughing and burning of stubbles. Eradicate other tungro hosts. Destroy weed hosts on bunds. [Chemical Methods] Leaf yellowing can be minimized by spraying 2% urea mixed with Mancozeb at 2.5 gm/lit. Instead of urea, foliar fertilizer like multi-K (potassium nitrate) can be sprayed at 1 per cent, which imparts disease resistance because of its high potassium content. Green leafhopper vectors are to be controlled effectively in time by spraying. Vegetation on the bunds should also be sprayed with insecticides. Maintain 2.5 cm of water in the nursery and broadcast any one of the following in 20 cents: Carbofuran 3G 3.5 kg, or Phorate 10G 1.0 kg, or Quinalphos 5G 2.0 kg. In the nursery, when virus infection is low, apply Carbofuran granules @ 1 kg/ha to control the vector population. During pre-tillering to mid-tillering, when one affected hill/m is observed, start application of Carbofuran granules @ 3.5 kg/ha to control the insect vector. Spray two rounds of any one of the following insecticides: Thiamethoxam 25 WDG 40 g/acre, or Imidacloprid 17.8 SL 40 ml/acre, at 15 and 30 days after transplanting. Special Detection Technique (Iodine Test): Collect leaf samples at 6 a.m. Immerse the top 10 cm portion of the leaf in a solution containing 2 g of iodine and 6 g of potassium iodide in 100 ml of water for 15 minutes, or 10 ml of tincture of iodine + 140 ml of water for one hour. Wash in water for detection. Tungro-infected leaves develop dark blue streaks."
+  },
+  "rice_sheath_rot": {
+    "id": "rice_sheath_rot",
+    "crop": "Rice",
+    "disease_name": "Sheath Rot",
+    "causal_organism": "Sarocladium oryzae (Syn: Acrocylindrium oryzae)",
+    "pathogen_type": "Fungal disease",
+    "symptoms_bullets": [
+      "Initial symptoms are noticed only on the uppermost leaf sheath enclosing young panicles.",
+      "The flag leaf sheath shows oblong or irregular greyish brown spots.",
+      "The spots enlarge and develop a grey centre and brown margins covering major portions of the leaf sheath.",
+      "The young panicles may remain within the sheath or emerge partially. The panicles rot and abundant whitish powdery fungal growth forms inside the leaf sheath."
+    ],
+    "pathogen_description": "The fungus produces whitish, sparsely branched, septate mycelium. Conidia are hyaline, smooth, single-celled and cylindrical in shape.",
+    "survival_and_spread": "Mainly through air-borne conidia and also seed-borne.",
+    "favourable_conditions": "Closer planting, high doses of nitrogen, high humidity and temperature around 25-30 °C. Injuries made by leaf folder, brown plant hopper and mites increase infection.",
+    "management": "Grow moderately resistant varieties viz., CO 55 and ADT 59. Treat the seeds with Thiram at 4 g/kg or Bacillus subtilis (TNAU) @ 10g/kg of seed. Soil application of gypsum (200 kg/ac) in two splits. Apply NSKE 5% or neem oil 3% or Ipomoea or Prosopis leaf powder extract 10 kg/ac. First spray at boot leaf stage and second 15 days later. Foliar spray with thiophanate methyl 70% WP 500 gm/acre, or soil application of hexaconazole 0.5% GR 4 kg per acre at the tillering stage."
+  },
+  "rice_sheath_blight": {
+    "id": "rice_sheath_blight",
+    "crop": "Rice",
+    "disease_name": "Sheath Blight",
+    "causal_organism": "Rhizoctonia solani (Sexual stage: Thanetophorus cucumeris)",
+    "pathogen_type": "Fungal disease",
+    "symptoms_bullets": [
+      "The fungus affects the crop from the tillering to heading stage.",
+      "Initial symptoms are noticed on leaf sheaths near water level.",
+      "On the leaf sheath, oval or elliptical or irregular greenish grey spots are formed.",
+      "As the spots enlarge, the centre becomes greyish white with an irregular blackish brown or purple brown border.",
+      "Lesions on the upper parts of plants extend rapidly, coalescing with each other to cover entire tillers from the water line to the flag leaf.",
+      "The presence of several large lesions on a leaf sheath usually causes death of the whole leaf.",
+      "In severe cases, all the leaves of a plant may be blighted in this way.",
+      "The infection extends to the inner sheaths, resulting in death of the entire plant.",
+      "Older plants are highly susceptible.",
+      "Plants heavily infected in the early heading and grain filling growth stages produce poorly filled grain, especially in the lower part of the panicle."
+    ],
+    "pathogen_description": "The fungus produces septate mycelium which is hyaline when young and yellowish brown when old. It produces a large number of spherical brown sclerotia.",
+    "survival_and_spread": "The pathogen can survive as sclerotia or mycelium in dry soil for about 20 months, but for only 5-8 months in moist soil. Sclerotia spread through irrigation water. The fungus has a wide host range.",
+    "favourable_conditions": "Presence of sclerotia or infection bodies floating on the water. Presence of sclerotia in the soil. Relative humidity from 96 to 100%. Temperature from 28-32 °C. High levels of nitrogen fertilizer. High seeding rate or close plant spacing. Frequent rain.",
+    "management": "Grow moderately resistant varieties viz., ADT 56, ADT 57, ADT 59 and KKM 1. Apply organic amendments viz., neem cake @ 60 kg/ac or FYM 5 tonnes/ha. Avoid flow of irrigation water from infected fields to healthy fields. Deep ploughing in summer and burning of stubbles. Spray Carbendazim 100 g/ac. Apply soil application of B. subtilis @ 1 kg/ac after 30 days of transplanting (mix the product with 20 kg of FYM/sand and apply). Follow with a foliar spray at 0.2% at boot leaf stage and 10 days later (400 g/ac)."
+  },
+  "rice_false_smut_lakshmi_disease": {
+    "id": "rice_false_smut_lakshmi_disease",
+    "crop": "Rice",
+    "disease_name": "False Smut (Lakshmi Disease)",
+    "causal_organism": "Ustilaginoidea virens (Sexual stage: Villosiclava virens)",
+    "pathogen_type": "Fungal disease",
+    "symptoms_bullets": [
+      "The fungus transforms individual ovaries/grains into greenish spore balls of velvety appearance.",
+      "Few to several spikelets in a panicle are affected."
+    ],
+    "pathogen_description": "Sclerotia present in the soil germinate and produce ascospores, which serve as the primary source of inoculum. Chlamydospores are formed in the infected grains as spore balls which are spherical to elliptical, warty and olivaceous. Smut spores are air-borne and responsible for secondary spread.",
+    "survival_and_spread": "",
+    "favourable_conditions": "Rainfall and cloudy weather during flowering and maturity, high soil nitrogen.",
+    "management": "[Preventive Methods] Grow moderately resistant varieties viz., CO 59. Use disease-free seeds selected from a healthy crop. Split application of nitrogen is recommended. Remove and properly dispose of infected plant debris. [Cultural Methods] Among cultural controls, destruction of straw and stubble from infected plants is recommended to reduce the disease. Early planted crop has fewer smut balls than the late planted crop. At the time of harvesting, diseased plants should be removed and destroyed so that sclerotia do not fall in the field. This reduces primary inoculum for the next crop. Field bunds and irrigation channels should be kept clean to eliminate alternate hosts. Excess application of nitrogenous fertilizer should be avoided. [Chemical Methods] Seed treatment with carbendazim 2.0 g/kg of seeds. At booting and pre-flowering stages, spray copper hydroxide 77 WP 800 gm, or copper hydroxide 53.8% DF 600 ml, or thifluzamide 15% + difenoconazole 20% SC 100 ml per acre."
+  },
+  "rice_bacterial_leaf_streak": {
+    "id": "rice_bacterial_leaf_streak",
+    "crop": "Rice",
+    "disease_name": "Bacterial Leaf Streak",
+    "causal_organism": "Xanthomonas oryzae pv. oryzicola",
+    "pathogen_type": "Bacterial disease",
+    "symptoms_bullets": [
+      "Fine translucent streaks are formed on the veins and the lesions enlarge lengthwise and infect larger veins, turning brown.",
+      "On the surface of the lesions, bacterial ooze comes out and forms small yellow band-like exudates under humid conditions.",
+      "In severe cases, the leaves dry up."
+    ],
+    "pathogen_description": "The bacterium is aerobic, gram negative, non spore forming, rod-shaped with size ranging from 1-2 x 0.8-1.0 μm with a monotrichous polar flagellum. Bacterial colonies are circular, convex with entire margins, whitish yellow to straw yellow coloured and opaque.",
+    "survival_and_spread": "It is transmitted through seeds and infected stubbles to the next planting season. The pathogen spreads through irrigation water and also through rain storms.",
+    "favourable_conditions": "Clipping of the tip of the seedling at the time of transplanting. Heavy rain, heavy dew, flooding, deep irrigation water. Severe wind and temperature of 25-30 °C. Application of excessive nitrogen, especially late top dressing.",
+    "management": "[Cultural Method] Burn the stubbles. Use optimum dose of fertilizers. Avoid clipping of the tip of the seedling at the time of transplanting. Avoid flooded conditions. Remove weed hosts periodically. [Chemical Method] Seed treatment: Soaking of seeds in streptomycin sulphate 90% and tetracycline 10% SP @ 40 ppm for 12 hours, or seedling root dipping @ 40 ppm for 30 minutes. Foliar spray in the main field @ 100-150 ppm. Repeat the spray after 15 days, if required."
+  },
+  "rice_bakanae_disease_foot_rot": {
+    "id": "rice_bakanae_disease_foot_rot",
+    "crop": "Rice",
+    "disease_name": "Bakanae Disease (Foot Rot)",
+    "causal_organism": "Gibberella fujikuroi",
+    "pathogen_type": "Fungal disease",
+    "symptoms_bullets": [
+      "Infected plants are several inches taller than normal plants in the seedbed and field.",
+      "Thin plants with yellowish green leaves and pale green flag leaves.",
+      "Drying of seedlings at early tillering.",
+      "Reduced tillering and drying leaves at late infection.",
+      "Partially filled grains, sterile or empty grains for surviving plants at maturity.",
+      "In the seedbed, infected seedlings with lesions on roots will die, either before or after transplanting."
+    ],
+    "pathogen_description": "The fungus produces both macro and microconidia. Microconidia are hyaline, single-celled and oval. Macroconidia are slightly sickle-shaped, and two to five celled. The fungus produces the phytotoxin fusaric acid, which is non-host specific.",
+    "survival_and_spread": "The fungus is externally seed-borne.",
+    "favourable_conditions": "",
+    "management": "Treat the seeds with Thiram or Captan or Carbendazim at 2 g/kg."
+  },
+  "rice_rice_yellow_dwarf": {
+    "id": "rice_rice_yellow_dwarf",
+    "crop": "Rice",
+    "disease_name": "Rice Yellow Dwarf",
+    "causal_organism": "Candidatus Phytoplasma",
+    "pathogen_type": "Phytoplasma disease",
+    "symptoms_bullets": [
+      "The infected plants are stunted and have yellowish green to whitish green leaves.",
+      "There is excessive tillering and leaves become soft and droop slightly.",
+      "Root growth is also reduced significantly.",
+      "Chlorosis occurs on the leaves, occasionally even spreading to the leaf sheaths.",
+      "Streaks may also form parallel to the leaf veins.",
+      "If plants are infected early they usually die before maturity; even if they survive, no panicles are produced or only a small number with no grains."
+    ],
+    "pathogen_description": "",
+    "survival_and_spread": "Phytoplasma is transmitted by Nephotettix virescens and N. nigropictus with a latent period of 25-30 days. It survives on several grass weeds.",
+    "favourable_conditions": "",
+    "management": "Deep ploughing during summer and burning of stubbles. Rice varieties like IR62 and IR64 are resistant to the disease. The management practices followed for Rice Tungro Disease (RTD) may be adopted for this disease also. Avoiding early planted rice will prevent an increase in vector density and the proportion of virus-acquired vectors. Plant fallow rice fields with non-vector hosts, plough fallow paddy fields, and use late-planting or synchronous planting to avoid an overlap of early and late planted rice crops. Remove weed hosts periodically. Practice crop rotation. Spray the vegetation on the bunds with insecticides. Chemical Method: Control the vector with any one of the following insecticides: Thiamethoxam 25 WDG 40 g/acre, or Imidacloprid 17.8 SL 40 ml/acre, sprayed at 15 and 30 days after transplanting."
+  },
+  "rice_rice_grassy_stunt_disease": {
+    "id": "rice_rice_grassy_stunt_disease",
+    "crop": "Rice",
+    "disease_name": "Rice Grassy Stunt Disease",
+    "causal_organism": "Rice grassy stunt virus (RGSV)",
+    "pathogen_type": "Viral disease",
+    "symptoms_bullets": [
+      "Diseased hills are severely stunted with excessive tillering and a very upright growth habit.",
+      "Diseased hills have a grassy and rosette appearance.",
+      "Leaves are short, narrow and yellowish green with numerous small rusty spots or patches, which form blotches.",
+      "Green coloration of the leaves is retained after application of sufficient nitrogenous fertilizers.",
+      "Infected plants usually survive until maturity but produce no panicles. Symptoms develop 10-20 days after infection."
+    ],
+    "pathogen_description": "The virus exists in the vector and in the rice crop. Brown plant hopper nymphs and adults transmit it where rice is grown year-round. RGSV is generally endemic. The macropterous (long-winged) forms of the insect are more important in spreading the disease than the short-winged forms. They feed on the diseased plant for at least 30 minutes to pick up the virus, and higher infection is attained after prolonged inoculation feeding periods of up to 24 hours. The availability of the vector encourages the damage. RGSV is a member of the Tenuiviruses. It has fine filamentous particles, 6-8 nm in diameter, with a modal contour length of 950-1,350 nm. The particles have one capsid protein and a genome made up of four single-stranded RNA segments.",
+    "survival_and_spread": "",
+    "favourable_conditions": "",
+    "management": "Avoid close planting and provide 30 cm rogue spacing at every 2.5 to 3.0 m to reduce pest incidence. Grow varieties released by IRRI that contain genes for BPH resistance, like IR26, IR64, IR36, IR56 and IR72. Plough and harrow the field to destroy stubbles right after harvest in order to eradicate other hosts. Apply any one of the following to control the vector BPH: Phosalone 35 EC 600 ml/acre, Acephate 75 SP 250 ml/acre, or Chlorpyriphos 20 EC 500 ml/acre."
+  },
+  "rice_grain_discolouration": {
+    "id": "rice_grain_discolouration",
+    "crop": "Rice",
+    "disease_name": "Grain Discolouration",
+    "causal_organism": "Drechslera oryzae, D. rostratum, D. tetramera, Curvularia lunata, Trichoconis padwickii, Sarocladium oryzae, Alternaria tenuis, Fusarium moniliforme, Cladosporium herbarum, Epicoccum purpurascens, Cephalosporium sp., Phoma sp. and Nigrospora sp. are associated with the discoloured grains.",
+    "pathogen_type": "Fungal disease complex (multiple associated fungi)",
+    "symptoms_bullets": [
+      "The grains may be infected by various organisms before or after harvesting, causing discolouration, the extent of which varies according to season and locality.",
+      "The infection may be external or internal, causing discoloration of the glumes or kernels or both.",
+      "Dark brown or black spots appear on the grains.",
+      "The discolouration may be red, yellow, orange, pink or black, depending upon the organism involved and the degree of infection.",
+      "This disease is responsible for quantitative and qualitative losses of grains."
+    ],
+    "pathogen_description": "",
+    "survival_and_spread": "The disease spreads mainly through air-borne conidia, and the fungus survives as a parasite and saprophyte in infected grains, plant debris and other crop debris.",
+    "favourable_conditions": "High humidity and cloudy weather during the heading stage.",
+    "management": "Pre- and post-harvest measures should be taken into account for prevention of grain discolouration. Foliar spray of neem oil @ 3 per cent at 50% flowering stage, followed by a second spray 10 days later. Seed treatment with Thiram at 4 g/kg or Bacillus subtilis (TNAU) @ 10g/kg. Foliar spray with thiophanate methyl 70% WP, or hexaconazole 4% + zineb 68% WP 400 gm per acre, at 50 per cent flowering."
+  }
+}

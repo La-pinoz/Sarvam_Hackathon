@@ -1,0 +1,184 @@
+{
+  "cotton_fusarium_wilt": {
+    "id": "cotton_fusarium_wilt",
+    "crop": "Cotton",
+    "disease_name": "Fusarium Wilt",
+    "causal_organism": "Fusarium oxysporum f.sp. vasinfectum",
+    "pathogen_type": "Fungal disease",
+    "symptoms_bullets": [
+      "Yellowing and browning of cotyledons followed by browning on the petiole.",
+      "Loss of turgidity, yellowing, drooping and wilting of leaves.",
+      "Browning or blackening of vascular tissues.",
+      "Infected plants appear stunted with fewer bolls."
+    ],
+    "pathogen_description": "",
+    "survival_and_spread": "Survives in soil as a saprophyte for many years; chlamydospores act as resting spores. Primary spread is through seed, dormant hyphae and chlamydospores. The pathogen is externally and internally seed-borne. Secondary spread by wind and irrigation water.",
+    "favourable_conditions": "Soil temperature of 20-30°C. Hot and dry periods followed by rains. Heavy black soils with an alkaline reaction. Increased dose of nitrogen and phosphatic fertilizers. Wounds caused by nematode (Meloidogyne incognita) and grubs of Ash weevil (Myllocerus pustulatus).",
+    "management": "Remove and burn the infected plant debris in the soil after deep summer ploughing. Apply farm yard manure or other organic manures @ 4 t/ac. Follow mixed cropping with non-host plants to reduce the soil temperature below 20°C by providing shade. Treat the acid-delinted seeds with Chlorothalonil at 4g/kg of seed. Seed treatment with Bacillus subtilis (10g/kg) or Trichoderma asperellum @ 4g/kg. Apply Trichoderma asperellum @ 1kg/acre, twice in the soil during sowing and 90 DAS. Multiply 1kg of T. asperellum in 100kg of farm yard manure for 15 days before application. Spot drenching with Carbendazim 50% WP @ 1g/lit of water."
+  },
+  "cotton_verticillium_wilt": {
+    "id": "cotton_verticillium_wilt",
+    "crop": "Cotton",
+    "disease_name": "Verticillium Wilt",
+    "causal_organism": "Verticillium dahliae",
+    "pathogen_type": "Fungal disease",
+    "symptoms_bullets": [
+      "Affects the crop in square and boll formation stages.",
+      "Bronzing of veins followed by interveinal chlorosis, yellowing and scorching of leaves.",
+      "Leaves exhibit drying of leaf margins and areas between veins show a \"tiger stripe\" symptom.",
+      "Affected plants remain barren, showing pinkish discoloration in stem and wood."
+    ],
+    "pathogen_description": "",
+    "survival_and_spread": "Survives in infected plant debris and in soil as microsclerotia for up to 14 years. Seeds also carry microsclerotia and conidia in the fuzz. Primary spread is through soil. Secondary spread is through contact of diseased roots with healthy ones, and through dissemination of infected plant parts via irrigation water and other implements.",
+    "favourable_conditions": "Low temperature of 15-20°C, low-lying and ill-drained soils. Heavy soils with alkaline condition. Heavy doses of nitrogenous fertilizers.",
+    "management": "Remove and burn the infected plant debris in the soil after deep summer ploughing. Apply farm yard manure or other organic manures @4 t/ac. Follow mixed cropping with non-host plants to lower the soil temperature below 20°C by providing shade. Follow crop rotation by growing paddy, lucerne, or chrysanthemum for 2-3 years. Treat the acid-delinted seeds with Chlorothalonil at 4g/kg of seed. Treat seeds with Bacillus subtilis (10g/kg) or Trichoderma asperellum @ 4g/kg. Apply Trichoderma asperellum @ 1kg/acre, twice in the soil during sowing and 90 DAS. Multiply 1kg of T. asperellum in 100kg of farm yard manure for 15 days before application."
+  },
+  "cotton_root_rot": {
+    "id": "cotton_root_rot",
+    "crop": "Cotton",
+    "disease_name": "Root Rot",
+    "causal_organism": "Rhizoctonia bataticola (Pycnidial stage: Macrophomina phaseolina)",
+    "pathogen_type": "Fungal disease",
+    "symptoms_bullets": [
+      "Germinating seedlings show black lesions on hypocotyls, girdling of stem and death of seedlings.",
+      "Affected basal stem becomes dark with bark shredding; sclerotial bodies are present in the shredded bark.",
+      "The entire root system gets rotted; plants dry up and can be easily pulled out."
+    ],
+    "pathogen_description": "",
+    "survival_and_spread": "The disease is soil-borne; the pathogen can survive in soil as sclerotia for several years. Primary spread is through soil-borne sclerotia. Secondary spread is through sclerotia disseminated by irrigation water, implements, heavy winds and other cultural operations.",
+    "favourable_conditions": "Dry weather following heavy rains. High soil temperature (35-39°C), low soil moisture (15-20 per cent). Cultivation of favourable hosts like vegetables, oilseeds and legumes preceding cotton, and wounds caused by ash-weevil grubs and nematodes.",
+    "management": "Remove and burn the infected plant debris in the soil after deep summer ploughing. Apply farm yard manure @4 t/ac or neem cake @ 60kg/ac. Take up sowing in the first week of April or the last week of June. Adopt intercropping with sorghum or moth bean (Phaseolus aconitifolius) to lower the soil temperature. Treat the acid-delinted seeds with Chlorothalonil at 4g/kg of seed. Treat seeds with Bacillus subtilis (10g/kg) or Trichoderma asperellum @ 4g/kg. Treat seeds with Tetraconazole 11.6% w/w (12.5% w/v) SL @2g/kg of seed, or Carboxin 37.5% + Thiram 37.5% WS @2.5g/kg of seed. Apply Trichoderma asperellum @ 1kg/acre, twice in the soil during sowing and 90 DAS. Multiply 1kg of T. asperellum in 100kg of farm yard manure for 15 days before application. Spot drench with Carbendazim @ 1g/lit or Trifloxystrobin + Tebuconazole @ 0.75g/lit at the base of affected plants and surrounding healthy plants."
+  },
+  "cotton_grey_areolate_mildew": {
+    "id": "cotton_grey_areolate_mildew",
+    "crop": "Cotton",
+    "disease_name": "Grey (Areolate) Mildew",
+    "causal_organism": "Ramularia areola",
+    "pathogen_type": "Fungal disease",
+    "symptoms_bullets": [
+      "Irregular to angular pale translucent lesions, bound by veinlets, with grey powdery growth on the lower leaf surface.",
+      "Correspondingly light green specks appear on the upper leaf surface.",
+      "In severe cases, whitish grey powdery growth appears on the upper surface. Affected leaves dry up inward, turn yellow and fall prematurely."
+    ],
+    "pathogen_description": "",
+    "survival_and_spread": "The pathogen survives during summer in infected crop residues. Perennial and self-sown cotton plants also harbour the pathogen. Primary spread is through conidia from infected plant debris. Secondary spread is through wind, rain splash, irrigation water and implements.",
+    "favourable_conditions": "Wet, humid conditions during the winter cotton season. Intermittent rains during the North-East monsoon season. Low temperature (20-30°C) during October-January. Close planting. Excessive application of nitrogenous fertilizers. Very early or very late sowing of cotton.",
+    "management": "Remove and burn the infected crop residues. Remove self-sown cotton plants during summer months. Avoid excessive application of nitrogenous fertilizers/manures. Adopt correct spacing based on soil conditions and varieties. Spray Wettable sulphur @ 400g/acre, or Chlorothalonil @ 200g/acre, or Difenaconazole @ 100ml/acre, or Kresoxim-methyl @ 200ml/acre, or Tebuconazole @ 200ml/acre, or Propiconazole @ 200ml/acre, or Metiram 55% + Pyraclostrobin 5% WG @ 200g/acre, or Azoxystrobin 18.2% + Difenoconazole 11.4% w/w SC @ 200ml/acre, at 60, 90 and 120 days after sowing."
+  },
+  "cotton_boll_rot": {
+    "id": "cotton_boll_rot",
+    "crop": "Cotton",
+    "disease_name": "Boll Rot",
+    "causal_organism": null,
+    "pathogen_type": null,
+    "symptoms_bullets": [
+      "Disease appears as small brown or black dots which later enlarge to cover the entire boll.",
+      "Infection spreads to inner tissues; rotting of seeds and lint occurs.",
+      "Bolls never burst open and fall off prematurely.",
+      "Fruiting bodies of the fungi are observed on the bolls."
+    ],
+    "pathogen_description": "",
+    "survival_and_spread": "The fungi survive on infected bolls in the soil. Primary spread is through infected bolls. Secondary spread is through air-borne conidia.",
+    "favourable_conditions": "Heavy rainfall during the square and boll formation stage. Punctures caused by insects. Closer spacing. Excessive nitrogen application.",
+    "management": "Adopt optimum spacing. Apply the recommended doses of fertilizers. Spray Copper oxychloride @1000g/acre or Carbendazim @ 200g/acre or Mancozeb @ 800g/acre."
+  },
+  "cotton_alternaria_leaf_spot": {
+    "id": "cotton_alternaria_leaf_spot",
+    "crop": "Cotton",
+    "disease_name": "Alternaria Leaf Spot",
+    "causal_organism": "Alternaria macrospora",
+    "pathogen_type": "Fungal disease",
+    "symptoms_bullets": [
+      "Small, pale to brown, irregular or round spots appear on the leaves.",
+      "Each spot has a central lesion surrounded by concentric rings.",
+      "Several spots coalesce to form blighted areas.",
+      "Affected leaves become brittle and fall off.",
+      "Spots also appear on bracts and bolls."
+    ],
+    "pathogen_description": "",
+    "survival_and_spread": "The pathogen survives in infected crop debris as dormant mycelium. Primary spread is through infected crop debris. Secondary spread is through air-borne conidia.",
+    "favourable_conditions": "High humidity, intermittent rains and moderate temperature of 25-28°C.",
+    "management": "Remove and destroy the infected plant residues. Perform deep ploughing during summer. Avoid seeds from infected crop. Spray Copper oxychloride @ 500g/acre, or Chlorothalonil @ 200g/acre, or Difenaconazole @ 100ml/acre, or Kresoxim-methyl @ 200ml/acre, or Tebuconazole @ 200ml/acre, or Trifloxystrobin + Tebuconazole @ 120g/acre, or Propiconazole @ 100ml/acre, or Metiram 55% + Pyraclostrobin 5% WG @ 100g/acre, or Fluxapyroxad 167g/l + Pyraclostrobin 333g/l SC @ 150g/acre, or Pyraclostrobin 20% WG @ 100g/acre, or Propineb 70% WP @ 500g/acre, at 60, 90 and 120 days after sowing. Apply Bacillus subtilis (BSC5) @ 400g/ac at 60, 90 and 120 days after sowing."
+  },
+  "cotton_alternaria_leaf_blight": {
+    "id": "cotton_alternaria_leaf_blight",
+    "crop": "Cotton",
+    "disease_name": "Alternaria Leaf Blight",
+    "causal_organism": "Alternaria macrospora",
+    "pathogen_type": "Fungal disease",
+    "symptoms_bullets": [
+      "The fungus infects seedlings and produces small reddish circular spots on the cotyledons and primary leaves.",
+      "Lesions develop on the collar region; the stem may be girdled, causing the seedling to wilt and die.",
+      "In mature plants, the fungus attacks the stem, leading to stem splitting and shredding of bark.",
+      "The most common symptom is boll spotting, with small water-soaked, circular, reddish-brown depressed spots on the bolls.",
+      "The lint is stained yellow or brown and becomes a solid, brittle mass of fibre."
+    ],
+    "pathogen_description": "",
+    "survival_and_spread": "The pathogen survives as dormant mycelium in the seed or as conidia on the seed surface. It also perpetuates on rotten bolls and other plant debris in the soil. Primary spread is through infested seed and soil. Secondary spread is through air-borne conidia.",
+    "favourable_conditions": "Prolonged rainfall at the time of boll formation and close planting.",
+    "management": "Remove and burn infected plant debris and bolls in the soil. Rogue out reservoir weed hosts. Treat the acid-delinted seeds with Chlorothalonil at 4g/kg of seed. Spray Copper oxychloride @ 500g/acre at the boll formation stage."
+  },
+  "cotton_cercospora_leaf_spot": {
+    "id": "cotton_cercospora_leaf_spot",
+    "crop": "Cotton",
+    "disease_name": "Cercospora Leaf Spot",
+    "causal_organism": "Cercospora gossypina",
+    "pathogen_type": "Fungal disease",
+    "symptoms_bullets": [
+      "Round or irregular greyish spots appear on leaves.",
+      "Spots may have dark brown or blackish borders in older leaves."
+    ],
+    "pathogen_description": "",
+    "survival_and_spread": "The pathogen survives in infected plant debris as conidia. Conidia are disseminated by wind or rain splash.",
+    "favourable_conditions": "Dense planting. Cloudy weather coupled with intermittent rain, followed by dry weather. High relative humidity.",
+    "management": "Remove and destroy infected plant residues. Spray Mancozeb @ 400g/acre, or Copper oxychloride @ 500g/acre, or Carbendazim 50% WP @ 200g/acre, or Propiconazole @ 200ml/acre, or Metiram 55% + Pyraclostrobin 5% WG @ 200g/acre, or Kresoxim-methyl 44.3% SC @ 200ml/acre, at the intimation of the disease."
+  },
+  "cotton_bacterial_blight": {
+    "id": "cotton_bacterial_blight",
+    "crop": "Cotton",
+    "disease_name": "Bacterial Blight",
+    "causal_organism": "Xanthomonas campestris pv. malvacearum",
+    "pathogen_type": "Bacterial disease",
+    "symptoms_bullets": [
+      "Small, water-soaked, circular or irregular lesions on the cotyledons.",
+      "Infection spreads to the stem through the petiole, causing withering and death of seedlings.",
+      "Small, dark green, water-soaked areas develop on the lower surface of leaves.",
+      "Spots become angular, restricted by veins and veinlets, and are visible on both leaf surfaces.",
+      "Spots later turn reddish-brown and infection spreads to veins and veinlets.",
+      "Blackening of the veins and veinlets gives a typical \"blighting\" appearance.",
+      "On the lower leaf surface, bacterial ooze forms as crusts or scales.",
+      "Leaves become crinkled and twisted inward, showing withering.",
+      "Infection also spreads from veins to petiole, causing blighting that leads to defoliation.",
+      "Dark brown to black lesions form on the stem and fruiting branches.",
+      "Lesions girdle the stem and branches, causing premature drooping of leaves.",
+      "Cracking of the stem and gummosis occur, resulting in the stem breaking and hanging as a dry black twig — the characteristic \"black arm\" symptom.",
+      "Water-soaked lesions appear on the bolls and turn into dark black, sunken, irregular spots.",
+      "Infection spreads slowly to the entire boll and shedding occurs.",
+      "Infection on mature bolls leads to premature bursting.",
+      "The bacterium spreads inside the boll and the lint gets stained yellow from bacterial ooze, losing its appearance and market value.",
+      "The pathogen also infects the seed, reducing seed size and viability."
+    ],
+    "pathogen_description": "",
+    "survival_and_spread": "The bacterium survives on infected, dried plant debris in soil for several years. It is also seed-borne, remaining as a slimy mass on the fuzz of the seed coat. Primary infection is through seed-borne bacterium. Secondary spread is through wind, wind-blown rain splash, irrigation water, insects and other implements.",
+    "favourable_conditions": "Optimum soil temperature of 28°C. High atmospheric temperature of 30-40°C. Relative humidity of 85 per cent. Poor tillage, late irrigation. Potassium deficiency in soil. Rain followed by bright sunshine during October and November.",
+    "management": "Delint the cotton seeds with concentrated sulphuric acid at 100ml/kg of seed. Treat the delinted seeds with Carboxin or Oxycarboxin at 2g/kg, or Carboxin 37.5% + Thiram 37.5% WS @2.5g/kg. Remove and destroy the infected plant debris. Rogue out volunteer cotton plants and weed hosts. Follow crop rotation with non-host crops. Early thinning and early earthing up with potash. Spray Streptomycin sulphate @ 100g + Copper oxychloride @500g/acre."
+  },
+  "cotton_tobacco_streak_virus": {
+    "id": "cotton_tobacco_streak_virus",
+    "crop": "Cotton",
+    "disease_name": "Tobacco Streak Virus",
+    "causal_organism": "Tobacco streak virus (TSV); vector: Thrips (Thrips tabaci)",
+    "pathogen_type": "Viral disease",
+    "symptoms_bullets": [
+      "Initially, chlorotic yellow spots appear on infected leaves.",
+      "Spots later turn into distinct necrotic purple spots with a yellow halo.",
+      "Necrotic streaks are produced on the petiole.",
+      "Bud and flower production is reduced.",
+      "Severe infection results in drying of squares."
+    ],
+    "pathogen_description": "",
+    "survival_and_spread": "The virus survives in alternate hosts. Primary spread is from infected plants. The virus is transmitted by thrips (Thrips tabaci).",
+    "favourable_conditions": "Minimum temperature and high relative humidity with leaf wetness.",
+    "management": "Remove infected plants and other host plants. Carry out periodical weeding. Seed treatment with Imidacloprid 70WS at 7g/kg. Spray Dinotefuran 20% SG @ 60g/acre, or Flonicamid 50% WG @ 60g/acre, or Imidacloprid 17.8% SL @ 40-50ml/acre, for controlling thrips."
+  }
+}

@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FasalVachak — Kisan Voice Agent</title>
+  <meta name="description"
+    content="FasalVachak voice agent: speak with an AI assistant about your crop diseases in Hindi." />
+
+  <!-- Pinned livekit-client v2 (UMD build exported as window.LivekitClient) -->
+  <script src="https://cdn.jsdelivr.net/npm/livekit-client@2/dist/livekit-client.umd.min.js"></script>
+
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --green: #2e7d32;
+      --green-light: #43a047;
+      --amber: #f59e0b;
+      --red: #dc2626;
+      --bg: #0f1c0f;
+      --card: #1e2e1e;
+      --border: #2d4a2d;
+      --text: #e8f5e9;
+      --text-muted: #81c784;
+      --radius: 12px;
+      --transition: 0.25s ease;
+    }
+
+    html,
+    body {
+      height: 100%;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2.5rem 2rem;
+      width: min(420px, 94vw);
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    }
+
+    .header {
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--green-light);
+      letter-spacing: 0.02em;
+    }
+
+    .header p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: 0.35rem;
+    }
+
+    .status-area {
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+    }
+
+    .status-row {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 0.9rem;
+    }
+
+    .status-row .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      background: #444;
+      transition: background var(--transition);
+    }
+
+    .status-row.ok .dot {
+      background: var(--green-light);
+    }
+
+    .status-row.warn .dot {
+      background: var(--amber);
+      animation: pulse 1s infinite;
+    }
+
+    .status-row.error .dot {
+      background: var(--red);
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        opacity: 1
+      }
+
+      50% {
+        opacity: 0.35
+      }
+    }
+
+    .error-box {
+      display: none;
+      background: rgba(220, 38, 38, 0.12);
+      border: 1px solid rgba(220, 38, 38, 0.4);
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      font-size: 0.85rem;
+      color: #fca5a5;
+      line-height: 1.5;
+    }
+
+    .error-box.visible {
+      display: block;
+    }
+
+    #joinBtn {
+      cursor: pointer;
+      border: none;
+      border-radius: 8px;
+      padding: 0.85rem 1.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+      background: var(--green);
+      color: #fff;
+      transition: background var(--transition), opacity var(--transition), transform 0.15s ease;
+      width: 100%;
+    }
+
+    #joinBtn:hover:not(:disabled) {
+      background: var(--green-light);
+      transform: translateY(-1px);
+    }
+
+    #joinBtn:active:not(:disabled) {
+      transform: translateY(0);
+    }
+
+    #joinBtn:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+    }
+
+    #leaveBtn {
+      display: none;
+      cursor: pointer;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.6rem 1rem;
+      font-size: 0.85rem;
+      font-weight: 500;
+      background: transparent;
+      color: var(--text-muted);
+      transition: border-color var(--transition), color var(--transition);
+      width: 100%;
+    }
+
+    #leaveBtn:hover {
+      border-color: var(--red);
+      color: #fca5a5;
+    }
+
+    .wave {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      height: 20px;
+    }
+
+    .wave.active {
+      display: flex;
+    }
+
+    .wave span {
+      display: block;
+      width: 4px;
+      background: var(--green-light);
+      border-radius: 2px;
+      animation: wave 0.8s ease-in-out infinite;
+    }
+
+    .wave span:nth-child(1) {
+      height: 8px;
+      animation-delay: 0s
+    }
+
+    .wave span:nth-child(2) {
+      height: 16px;
+      animation-delay: 0.1s
+    }
+
+    .wave span:nth-child(3) {
+      height: 12px;
+      animation-delay: 0.2s
+    }
+
+    .wave span:nth-child(4) {
+      height: 20px;
+      animation-delay: 0.3s
+    }
+
+    .wave span:nth-child(5) {
+      height: 10px;
+      animation-delay: 0.15s
+    }
+
+    @keyframes wave {
+
+      0%,
+      100% {
+        transform: scaleY(0.4)
+      }
+
+      50% {
+        transform: scaleY(1)
+      }
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 0.72rem;
+      color: #4a6b4a;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card" role="main">
+    <div class="header">
+      <h1>&#127807; FasalVachak</h1>
+      <p>Apni fasal ki samasya bataiye &#8212; AI se baat karein</p>
+    </div>
+
+    <div class="status-area" aria-live="polite">
+      <div class="status-row" id="connRow">
+        <span class="dot" aria-hidden="true"></span>
+        <span id="connText">Call karne ke liye taiyar</span>
+      </div>
+      <div class="status-row" id="agentRow">
+        <span class="dot" aria-hidden="true"></span>
+        <span id="agentText">Agent: &#8212;</span>
+      </div>
+    </div>
+
+    <div class="wave" id="speakingWave" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <div class="error-box" id="errorBox" role="alert"></div>
+
+    <button id="joinBtn" type="button">&#128222; Join Call</button>
+    <button id="leaveBtn" type="button">&#128308; Call Khatam Karein</button>
+
+    <!--
+      The audio element is created here (not dynamically) so we can reference
+      it within the same user-gesture chain that triggered the Join Call click,
+      satisfying Chrome/Safari autoplay policies.
+    -->
+    <audio id="agentAudio" autoplay playsinline style="display:none;"></audio>
+
+    <div class="footer">FasalVachak &middot; Kisan Voice Agent</div>
+  </div>
+
+  <script>
+    "use strict";
+
+    // ── DOM refs ──────────────────────────────────────────────────────────────
+    const joinBtn = document.getElementById('joinBtn');
+    const leaveBtn = document.getElementById('leaveBtn');
+    const connRow = document.getElementById('connRow');
+    const connText = document.getElementById('connText');
+    const agentRow = document.getElementById('agentRow');
+    const agentText = document.getElementById('agentText');
+    const errorBox = document.getElementById('errorBox');
+    const agentAudio = document.getElementById('agentAudio');
+    const speakingWave = document.getElementById('speakingWave');
+
+    // ── Module-level state ────────────────────────────────────────────────────
+    let room = null;   // LivekitClient.Room instance (null when not connected)
+    let agentTimerId = null;   // Handle for the agent-not-responding timeout
+    let currentTranscript = 'Bol raha hai'; // Holds the real-time agent text
+
+    // ── UI helpers ────────────────────────────────────────────────────────────
+
+    function setConnStatus(text, state) {
+      // state: '' | 'ok' | 'warn' | 'error'
+      connText.textContent = text;
+      connRow.className = 'status-row ' + state;
+    }
+
+    function setAgentStatus(text, state) {
+      agentText.textContent = 'Agent: ' + text;
+      agentRow.className = 'status-row ' + state;
+    }
+
+    function showError(msg) {
+      errorBox.textContent = msg;
+      errorBox.classList.add('visible');
+    }
+
+    function clearError() {
+      errorBox.textContent = '';
+      errorBox.classList.remove('visible');
+    }
+
+    function setSpeaking(isSpeaking) {
+      if (isSpeaking) {
+        setAgentStatus(currentTranscript, 'ok');
+        speakingWave.classList.add('active');
+      } else {
+        currentTranscript = 'Bol raha hai'; // reset for next utterance
+        setAgentStatus('Sun raha hai', 'ok');
+        speakingWave.classList.remove('active');
+      }
+    }
+
+    function resetToReady() {
+      joinBtn.disabled = false;
+      leaveBtn.style.display = 'none';
+      setConnStatus('Call karne ke liye taiyar', '');
+      setAgentStatus('\u2014', '');
+      currentTranscript = 'Bol raha hai';
+      speakingWave.classList.remove('active');
+    }
+
+    // ── Agent-not-responding timeout ──────────────────────────────────────────
+    //
+    // server.py publishes an audio track immediately after joining the room.
+    // We treat the first TrackSubscribed(Audio) event as "agent responded".
+    // If that never fires within 10 seconds we show an error.
+
+    function startAgentTimer() {
+      clearAgentTimer();
+      agentTimerId = setTimeout(function () {
+        agentTimerId = null;
+        if (room && room.state === 'connected') {
+          console.warn('[FasalVachak] Agent did not respond within 10s.');
+          setAgentStatus('Jawab nahi de raha', 'error');
+          showError(
+            'Voice agent ne 10 seconds mein jawab nahi diya. ' +
+            'Please phir try karein.'
+          );
+        }
+      }, 10000);
+    }
+
+    function clearAgentTimer() {
+      if (agentTimerId !== null) {
+        clearTimeout(agentTimerId);
+        agentTimerId = null;
+      }
+    }
+
+    // ── Attach agent audio track to <audio> ──────────────────────────────────
+    //
+    // livekit-client v2: RemoteAudioTrack exposes .mediaStreamTrack (raw W3C
+    // MediaStreamTrack). We wrap it in a MediaStream and assign to srcObject.
+    // This is called from within (or downstream of) the Join Call gesture chain,
+    // so autoplay should be granted by the browser.
+
+    function attachAudioTrack(track) {
+      try {
+        var ms = new MediaStream([track.mediaStreamTrack]);
+        agentAudio.srcObject = ms;
+        agentAudio.play().catch(function (err) {
+          console.warn('[FasalVachak] Audio autoplay blocked:', err);
+          showError(
+            'Audio autoplay block ho gaya. ' +
+            'Page reload karke phir try karein, ya browser mein autoplay allow karein.'
+          );
+        });
+        console.log('[FasalVachak] Agent audio attached.');
+      } catch (err) {
+        console.error('[FasalVachak] attachAudioTrack error:', err);
+      }
+    }
+
+    // ── Room teardown (called before creating a new room or on leave) ─────────
+
+    async function destroyRoom() {
+      clearAgentTimer();
+      agentAudio.srcObject = null;
+      agentAudio.src = '';
+      speakingWave.classList.remove('active');
+      if (room) {
+        try { await room.disconnect(); } catch (_) { /* ignore */ }
+        room = null;
+      }
+    }
+
+    // ── Join Call handler ─────────────────────────────────────────────────────
+
+    joinBtn.addEventListener('click', async function () {
+      // Guard: ignore click if already connecting/connected
+      if (room && (room.state === 'connected' || room.state === 'connecting')) return;
+
+      // Touch the audio element inside the user-gesture chain.
+      // This is the earliest safe moment to unlock autoplay in Chrome/Safari.
+      agentAudio.srcObject = null;
+      agentAudio.src = '';
+
+      clearError();
+      joinBtn.disabled = true;
+      leaveBtn.style.display = 'none';
+      setConnStatus('Token le raha hai\u2026', 'warn');
+      setAgentStatus('\u2014', '');
+      speakingWave.classList.remove('active');
+
+      // ── Step 1: POST /connect → get token, url, room ─────────────────────────
+      var token, lkUrl, roomName;
+      try {
+        var resp = await fetch('/connect', { method: 'POST' });
+        if (!resp.ok) {
+          var body = await resp.text().catch(function () { return '(no body)'; });
+          throw new Error('HTTP ' + resp.status + ': ' + body);
+        }
+        var data = await resp.json();
+        token = data.token;
+        lkUrl = data.url;
+        roomName = data.room;
+        if (!token || !lkUrl) {
+          throw new Error('Server response mein token ya URL nahi mila.');
+        }
+      } catch (err) {
+        console.error('[FasalVachak] /connect error:', err);
+        showError('Server se connect nahi ho saka. Network check karein aur phir try karein.');
+        resetToReady();
+        return;
+      }
+
+      console.log('[FasalVachak] Token received. Room:', roomName);
+      setConnStatus('LiveKit se connect ho raha hai\u2026', 'warn');
+
+      // Tear down any previous room before creating a new one
+      await destroyRoom();
+
+      // ── Step 2: Create LiveKit Room ───────────────────────────────────────────
+      var LK = LivekitClient;
+      var Room = LK.Room;
+      var RoomEvent = LK.RoomEvent;
+      var Track = LK.Track;
+      var ParticipantEvent = LK.ParticipantEvent;
+
+      room = new Room({ adaptiveStream: true, dynacast: true });
+
+      // Connected
+      room.on(RoomEvent.Connected, function () {
+        console.log('[FasalVachak] Connected to LiveKit room.');
+        setConnStatus('Connected', 'ok');
+        setAgentStatus('Agent ka intezaar\u2026', 'warn');
+        joinBtn.disabled = true;
+        leaveBtn.style.display = 'block';
+        startAgentTimer();
+      });
+
+      // Reconnecting
+      room.on(RoomEvent.Reconnecting, function () {
+        console.log('[FasalVachak] Reconnecting\u2026');
+        setConnStatus('Dobara connect ho raha hai\u2026', 'warn');
+      });
+
+      // Reconnected
+      room.on(RoomEvent.Reconnected, function () {
+        console.log('[FasalVachak] Reconnected.');
+        setConnStatus('Connected', 'ok');
+      });
+
+      // Disconnected (room-level)
+      room.on(RoomEvent.Disconnected, function (reason) {
+        console.log('[FasalVachak] Room disconnected. Reason:', reason);
+        clearAgentTimer();
+        agentAudio.srcObject = null;
+        agentAudio.src = '';
+        room = null;
+        if (!errorBox.classList.contains('visible')) {
+          setConnStatus('Disconnected', 'error');
+        }
+        resetToReady();
+      });
+
+      // TrackSubscribed: agent audio track → "agent responded" signal
+      room.on(RoomEvent.TrackSubscribed, function (track, _pub, participant) {
+        console.log('[FasalVachak] TrackSubscribed:', track.kind, 'from', participant.identity);
+        if (track.kind === Track.Kind.Audio) {
+          clearAgentTimer();
+          setAgentStatus('Sun raha hai', 'ok');
+          attachAudioTrack(track);
+          // Per-participant speaking detection
+          participant.on(ParticipantEvent.IsSpeakingChanged, function (speaking) {
+            setSpeaking(speaking);
+          });
+        }
+      });
+
+      // TrackUnsubscribed: agent audio removed
+      room.on(RoomEvent.TrackUnsubscribed, function (track, _pub, participant) {
+        if (track.kind === Track.Kind.Audio) {
+          console.log('[FasalVachak] Audio track removed from', participant.identity);
+          agentAudio.srcObject = null;
+          agentAudio.src = '';
+          speakingWave.classList.remove('active');
+        }
+      });
+
+      // ParticipantDisconnected: agent left the room
+      room.on(RoomEvent.ParticipantDisconnected, function (participant) {
+        console.log('[FasalVachak] Participant left:', participant.identity);
+        clearAgentTimer();
+        setAgentStatus('Disconnect ho gaya', 'error');
+        showError('Voice agent disconnect ho gaya. Dobara Join Call karein.');
+        agentAudio.srcObject = null;
+        agentAudio.src = '';
+        speakingWave.classList.remove('active');
+      });
+
+      // TranscriptionReceived: agent real-time speech text
+      room.on(RoomEvent.TranscriptionReceived, function (segments, participant) {
+        // Check if it's the remote agent speaking
+        if (participant && room && room.localParticipant && participant.identity !== room.localParticipant.identity) {
+          segments.forEach(function (segment) {
+            if (segment.text && segment.text.trim().length > 0) {
+              currentTranscript = segment.text;
+              // Update immediately if the agent is currently active
+              if (speakingWave.classList.contains('active')) {
+                setAgentStatus(currentTranscript, 'ok');
+              }
+            }
+          });
+        }
+      });
+
+      // ActiveSpeakersChanged: backup speaking detection at room level
+      room.on(RoomEvent.ActiveSpeakersChanged, function (speakers) {
+        var localId = room && room.localParticipant ? room.localParticipant.identity : '';
+        var agentSpeaking = speakers.some(function (p) { return p.identity !== localId; });
+        setSpeaking(agentSpeaking);
+      });
+
+      // ── Step 3: Connect to LiveKit ─────────────────────────────────────────────
+      try {
+        await room.connect(lkUrl, token);
+        // RoomEvent.Connected handler updates UI
+      } catch (err) {
+        console.error('[FasalVachak] room.connect failed:', err);
+        showError('LiveKit se connect nahi ho saka. Please phir try karein.');
+        room = null;
+        resetToReady();
+        return;
+      }
+
+      // ── Step 4: Enable microphone ──────────────────────────────────────────────
+      // Still inside the user-gesture chain (async continuation).
+      try {
+        await room.localParticipant.setMicrophoneEnabled(true);
+        console.log('[FasalVachak] Microphone enabled.');
+      } catch (err) {
+        console.error('[FasalVachak] Microphone error:', err);
+        showError(
+          'Microphone permission nahi mili. ' +
+          'Baat karne ke liye microphone allow karein. ' +
+          'Agent ki awaaz sun sakte hain.'
+        );
+        // Non-fatal: agent can still speak; don't force disconnect
+      }
+    });
+
+    // ── Leave Call handler ────────────────────────────────────────────────────
+    leaveBtn.addEventListener('click', async function () {
+      clearError();
+      await destroyRoom();
+      resetToReady();
+    });
+
+  </script>
+</body>
+
+</html>
